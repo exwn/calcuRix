@@ -1,0 +1,46 @@
+.container{
+    width: 250px;
+    height: 405px;
+    margin: auto;
+    background-color: #001B2F;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.output{
+    /* margin: 0 5px; */
+    padding: 30px 4px 0 0;
+    margin: auto;
+}
+
+.output input{
+    width: 100%;
+    height: 120px;
+    font-size: 70px;
+    text-align: right;
+    background-color: #00223A;
+    /* background-color: #fffff; */
+    color: #ffff;
+    border-radius: 10px;
+    border: none;
+}
+
+.klik{
+    color: #ffff;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.klikButton, #clear{
+    width: 20px;
+    /* background-color: aqua; */
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
