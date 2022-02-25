@@ -1,6 +1,7 @@
 let operasi = "";
 let angkaPertama = "0";
 let angkaKedua = "0";
+let angkaKetiga = "100";
 
 const nilai = document.getElementById("nilai");
 const klikButton = document.getElementsByClassName("klikButton");
@@ -9,7 +10,7 @@ const clear = document.getElementById("clear");
 for (let i = 0; i < klikButton.length; i++) {
   klikButton[i].addEventListener("click", function () {
     if(
-      klikButton[i].innerText === "C" ||
+      // klikButton[i].innerText === "C" ||
       klikButton[i].innerText === "%" ||
       klikButton[i].innerText === "del" ||
       klikButton[i].innerText === "/" ||
@@ -28,6 +29,7 @@ for (let i = 0; i < klikButton.length; i++) {
       if (operasi === "-") nilai.value = parseInt(angkaPertama) - parseInt(angkaKedua);
       if (operasi === "*") nilai.value = parseInt(angkaPertama) * parseInt(angkaKedua);
       if (operasi === "/") nilai.value = parseInt(angkaPertama) / parseInt(angkaKedua);
+      if (operasi === "%") nilai.value = parseInt(angkaPertama) / parseInt(angkaKetiga);
     } else {
       const currentValue = parseInt(nilai.value);
       if (currentValue === 0){
@@ -45,5 +47,5 @@ clear.addEventListener("click", function(){
 operasi = "";
 angkaPertama = "0";
 angkaKedua = "0";
-nilai.value = 0;
+nilai.value = "0";
 })

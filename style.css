@@ -30,17 +30,23 @@
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    gap: 20px;
+    gap: 0px;
     font-size: 15px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .klikButton, #clear{
-    width: 20px;
+    width: 34px;
     /* background-color: aqua; */
-    padding: 5px;
-    margin: auto;
+    padding: 9px;
+    margin-bottom: 9px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
+
+.klikButton:hover, #clear:hover{
+    background-color: #00223A;
+    cursor: pointer;
+}
+    
